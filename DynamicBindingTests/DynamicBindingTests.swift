@@ -9,7 +9,10 @@
 import XCTest
 @testable import DynamicBinding
 
-class DynamicBindingTests: XCTestCase {
+class DynamicTests: XCTestCase {
+    
+    let initialText = "initial text"
+    let modifiedText = "yo whatsup"
     
     override func setUp() {
         super.setUp()
@@ -21,16 +24,32 @@ class DynamicBindingTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_bind() {
+        let mockLabel = UILabel()
+        var dynamicText = DynamicString<UILabel>(value: initialText)
+        dynamicText.bindText(to: mockLabel)
+        
+        XCTAssertEqual(mockLabel.text, initialText)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func test_modifyValue() {
+        let mockLabel = UILabel()
+        var dynamicText = DynamicString<UILabel>(value: initialText)
+        dynamicText.bindText(to: mockLabel)
+        
+        dynamicText.setTextValue(modifiedText)
+        
+        XCTAssertEqual(mockLabel.text, modifiedText)
+    }
+    
+    func test_modifyUI() {
+        let mockLabel = UILabel()
+        var dynamicText = DynamicString<UILabel>(value: initialText)
+        dynamicText.bindText(to: mockLabel)
+        
+        mockLabel.text = modifiedText
+        
+        XCTAssertEqual(dynamicText.getTextValue(), modifiedText)
     }
     
 }

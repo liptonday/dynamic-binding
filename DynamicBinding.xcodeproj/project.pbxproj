@@ -13,6 +13,7 @@
 		6946AC1D211F97BE006A25B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6946AC1C211F97BE006A25B5 /* Assets.xcassets */; };
 		6946AC20211F97BE006A25B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6946AC1E211F97BE006A25B5 /* LaunchScreen.storyboard */; };
 		6946AC2B211F97BE006A25B5 /* DynamicBindingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946AC2A211F97BE006A25B5 /* DynamicBindingTests.swift */; };
+		6946AC36211F97FA006A25B5 /* DynamicString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946AC35211F97FA006A25B5 /* DynamicString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		6946AC26211F97BE006A25B5 /* DynamicBindingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicBindingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6946AC2A211F97BE006A25B5 /* DynamicBindingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBindingTests.swift; sourceTree = "<group>"; };
 		6946AC2C211F97BE006A25B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6946AC35211F97FA006A25B5 /* DynamicString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				6946AC15211F97BC006A25B5 /* AppDelegate.swift */,
 				6946AC17211F97BD006A25B5 /* ViewController.swift */,
+				6946AC35211F97FA006A25B5 /* DynamicString.swift */,
 				6946AC19211F97BD006A25B5 /* Main.storyboard */,
 				6946AC1C211F97BE006A25B5 /* Assets.xcassets */,
 				6946AC1E211F97BE006A25B5 /* LaunchScreen.storyboard */,
@@ -199,6 +202,7 @@
 			files = (
 				6946AC18211F97BD006A25B5 /* ViewController.swift in Sources */,
 				6946AC16211F97BC006A25B5 /* AppDelegate.swift in Sources */,
+				6946AC36211F97FA006A25B5 /* DynamicString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
